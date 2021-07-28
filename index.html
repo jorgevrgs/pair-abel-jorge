@@ -9,8 +9,68 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    Hello World, we are software developers!
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#howitworks">How it works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
 
+    <main>
+      <h1 class="title">Handcrafted, home-made masterpieces</h1>
+      <div class="newsletter">
+        <form
+          method="POST"
+          action="https://www.freecodecamp.com/email-submit"
+          id="form"
+        >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="input-email"
+            placeholder="Enter your email address"
+            required
+          />
+
+          <input id="submit" type="submit" class="input-button">
+            Get Started
+          </input>
+        </form>
+      </div>
+
+      <div class="video-container">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/SwYBhSiGeI8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="content">
+        <div id="features">
+          <h2>Features</h2>
+        </div>
+
+        <div id="howitworks">
+          <h2>How it works</h2>
+        </div>
+
+        <div id="pricing">
+          <h2>Pricing</h2>
+        </div>
+      </div>
+    </main>
 
     <!--
 
