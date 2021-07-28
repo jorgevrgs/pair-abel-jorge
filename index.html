@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
-  <body>
+  <body class="bg-gray-100">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <header id="header">
+    <header id="header" class="border flex justify-between px-8 py-2 sticky top-0">
       <img
+      class="h-8"
         id="header-img"
         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
       />
-      <nav id="nav-bar">
+      <nav id="nav-bar" class="space-x-8 text-base font-medium">
         <a class="nav-link" href="#features">Features</a>
         <a class="nav-link" href="#howitworks">How it works</a>
         <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
     </header>
 
-    <main>
-      <h1 class="title">Handcrafted, home-made masterpieces</h1>
-      <div class="newsletter">
+    <main class="flex flex-col items-center py-8 w-full ">
+      <h1 class="title text-2xl font-bold mb-4">Handcrafted, home-made masterpieces</h1>
+      <div class="newsletter w-full">
         <form
+        class="w-full flex flex-col border items-center space-y-4"
           method="POST"
           action="https://www.freecodecamp.com/email-submit"
           id="form"
@@ -35,14 +38,17 @@
             id="email"
             name="email"
             type="email"
-            class="input-email"
+            class="input-email bg-white border placeholder-gray-600 text-sm p-1 w-full max-w-xs border border-gray-900"
             placeholder="Enter your email address"
             required
           />
 
-          <input id="submit" type="submit" class="input-button">
-            Get Started
-          </input>
+          
+
+            <input id="submit" type="submit" class="input-button font-bold bg-yellow-400 w-40" value="GET STARTED" />
+           
+        
+      
         </form>
       </div>
 
