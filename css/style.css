@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1024px ){
+    body{
+        font-size: 1.2rem;
+    }
+}
+.content{
+    background-color: hsl(120, 100, 50);
+    display: inline-flex;
+}
